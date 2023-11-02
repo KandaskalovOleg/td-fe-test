@@ -152,9 +152,9 @@ const goToPage = (page: any) => {
             </div>
           </template>
         </el-table-column>
-        <el-table-column label="First Name" min-width="120" prop="first_name"></el-table-column>
-        <el-table-column label="Last Name" min-width="120" prop="last_name"></el-table-column>
-        <el-table-column label="Email" min-width="180" prop="email"></el-table-column>     
+        <el-table-column label="First Name" min-width="120" prop="first_name" sortable></el-table-column>
+        <el-table-column label="Last Name" min-width="120" prop="last_name" sortable></el-table-column>
+        <el-table-column label="Email" min-width="180" prop="email" sortable></el-table-column>     
         <el-table-column label="Delete" width="100" fixed="right">
           <template #default="scope">
             <el-button type="danger" @click="removeUser(scope.row.id)">Delete</el-button>
