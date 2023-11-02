@@ -18,9 +18,9 @@ watchEffect(() => {
       mode="horizontal"
       router= true
     >
-      <el-menu-item index="/">Home</el-menu-item>
-      <el-menu-item index="/users-management">Users Management</el-menu-item>
-      <el-menu-item index="/support">Support</el-menu-item>
+      <el-menu-item index="/" route="/">Home</el-menu-item>
+      <el-menu-item index="/users-management" route="/users-management">Users Management</el-menu-item>
+      <el-menu-item index="/support" route="/support">Support</el-menu-item>
     </el-menu>
   </nav>
 </template>
